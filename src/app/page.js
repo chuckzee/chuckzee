@@ -11,7 +11,7 @@ export default function Home() {
       name: "Coupon Clipping App",
       content:
         "ReactJS application housed in a WordPress Plugin. Automated code deployments with Bitbucket Pipelines. NodeJS/ExpressJS back-end hosted in containerized Azure App Service. I personally architected the solution end to end and wrote the spec for all involved APIs and their integrations to services like Mulesoft and Inmar.",
-      imageSrc: "/images/react-wordpress.png",
+      imageSrc: "/images/coupons.png",
       uri: "https://shopfamilyfare.com/coupons",
     },
     {
