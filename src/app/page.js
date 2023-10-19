@@ -80,6 +80,13 @@ export default function Home() {
       projectAlt: "Preview of a candy store website"
     },
     {
+      name: "A scripted minecraft adventure",
+      content: "Once upon a time, a buddy and I learned command block scripting and made a randomizer dungeon crawl - before it was cool. We made it onto the front page of minecraft.net when we were featured.",
+      imageSrc: "/images/minecraft.png",
+      uri: "https://www.minecraft.net/en-us/article/dungeon-creeper",
+      projectAlt: "A snapshot of a minecraft.net article"
+    },
+    {
       name: "This website",
       content: "This website is a weird vaporwave ... piece of paper? Built with NextJS and deployed into Azure.",
       imageSrc: "/images/chuckzee.png",
