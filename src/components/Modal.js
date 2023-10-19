@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Modal({ isOpen, onClose, content }) {
   if (!isOpen) return null;
 
@@ -8,9 +6,9 @@ export default function Modal({ isOpen, onClose, content }) {
       <div className="modal-content bg-white p-5 rounded shadow-lg w-3/4">
         {content.imageSrc && (
           <a target="_blank" href={content.uri} className="image-container relative">
-            <Image
+            <img
               src={content.imageSrc}
-              alt="Project Image Description" 
+              alt={content.projectAlt} 
               width={1920} 
               height={1080}
               className="modalImage"

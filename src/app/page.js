@@ -13,6 +13,7 @@ export default function Home() {
         "ReactJS application housed in a WordPress Plugin. Automated code deployments with Bitbucket Pipelines. NodeJS/ExpressJS back-end hosted in containerized Azure App Service. I personally architected the solution end to end and wrote the spec for all involved APIs and their integrations to services like Mulesoft and Inmar.",
       imageSrc: "/images/coupons.png",
       uri: "https://shopfamilyfare.com/coupons",
+      projectAlt: "Preview of a Coupon Clipping App"
     },
     {
       name: "Loyalty Points App",
@@ -20,60 +21,70 @@ export default function Home() {
         "ReactJS application housed in a WordPress Plugin. Automated code deployments with Bitbucket Pipelines. NodeJS/ExpressJS back-end hosted in containerized Azure App Service. I personally architected the solution end to end and wrote the spec for all involved APIs and their integrations to services like Mulesoft and Inmar.",
       imageSrc: "/images/rewards-points.png",
       uri: "https://shopfamilyfare.com/rewards",
+      projectAlt: "Preview of a Loyalty Points App"
     },
     {
       name: "Grocery Shopping iOS/Android App",
       content: "React Native / Redux app for six brick and mortar brands - Family Fare, D&W Fresh Market, Family Fresh Market, Dan's Supermarkets, VG's Grocery, and Forest Hills Foods. Hundreds of thousands of installs. Create and manage an account, view the weekly ad, find a store near you, clip coupons, earn points and rewards, contact support, track your order by fine GPS location for instant grocery pickups.",
       imageSrc: "/images/grocery-app.jpg",
       uri: "https://www.shopfamilyfare.com/download-mobile-app",
+      projectAlt: "Preview of a Grocery Shopping iOS/Android App"
     },
     {
       name: "Apple Wallet Card Generator",
       content: "A Node/Express application to generate Apple Wallet loyalty cards so that our customers can scan at checkout.",
       imageSrc: "/images/applewallet.jpg",
       uri: "https://www.shopfamilyfare.com/download-mobile-app",
+      projectAlt: "Preview of a Apple Wallet Card Generator"
     },
     {
       name: "Self-editing chatbot",
       content: "Using OpenAI's GPT API and prompt engineering, a node application that ... built itself! Using a chat interface, I can send instructions to a chatbot to edit the application itself. The user is prompted in the terminal to accept the changes.",
       imageSrc: "/images/self-editing-chatbot.jpg",
       uri: "https://github.com/chuckzee/openai-selfedit",
+      projectAlt: "Preview of a Self-editing chatbot"
     },
     {
       name: "AI Dungeon Master Chatbot",
       content: "An OpenAI GPT dungeon master with a Discord bot integration. 'dungeonmAIster' (I'm bad at naming things) can /start a D&D session, and then responds to users' /action commands describing what they do. The bot generates a dungeon in JSON format and records the status of rooms and exploration.",
       imageSrc: "/images/dungeonmAIster.jpg",
       uri: "https://github.com/chuckzee/dungeonmAIster",
+      projectAlt: "Preview of a AI Dungeon Master Chatbot"
     },
     {
       name: "monsterdle - wordle for D&D",
       content: "Caught up in the wordle craze, I built a Dart/Flutter app with a Node/Express back-end that lets users guess the 'monster of the day' from fifth edition Dungeons & Dragons. I had never used Flutter before, so it was a learning experience.",
       imageSrc: "/images/monsterdle.jpg",
       uri: "https://github.com/chuckzee/monsterdle",
+      projectAlt: "Preview of a wordle for D&D"
     },
     {
       name: "Gordon Now Delivery Tracking App",
       content: "My first React Native mobile app. In Gordon Food Service\'s B2B business, truck deliveries can sometimes happen every day or multiple times a week - kitchen managers could track their order and how many stops away their order is at a given moment. They were also able to preview what was on the truck - were there are necessary replacements? This information was the lifeblood of restaurants keeping operations going smoothly. This app was supported by a Kotlin back-end.",
       imageSrc: "/images/gordonnowapp.jpg",
       uri: "",
+      projectAlt: "Preview of a Delivery Tracking App"
     },
     {
       name: "Gordon Now Marketing Site",
       content: "A marketing site & editing tool for customers using the Gordon Now tool. It included an app that let users edit common products they would order so that their Gordon Now Voice agent (we used Google Homes and Google Minis) would recognize them - aka 'aliases.' ReactJS and PHP primarily.",
       imageSrc: "/images/gordonnowcom.png",
       uri: "",
+      projectAlt: "Preview of a Marketing Site"
     },
     {
       name: "A candy store website?",
       content: "One of the few Magento 2 products I've done - back in 2015 no less - this site is still kicking! I don't have a ton to say about it, I mostly just really enjoy the goofy CSS animations and things I did for it.",
       imageSrc: "/images/shopthebulkstore.png",
       uri: "https://www.shopthebulkstore.com/",
+      projectAlt: "Preview of a candy store website"
     },
     {
       name: "This website",
       content: "This website is a weird vaporwave ... piece of paper? Built with NextJS and deployed into Azure.",
       imageSrc: "/images/chuckzee.png",
       uri: "https://chuckzee.com",
+      projectAlt: "Preview of ... this website!"
     },
   ];
 
@@ -127,8 +138,7 @@ export default function Home() {
             <div className="title-container">
               <h1 className="page-title">Chuck Zimmerman</h1>
               <span>
-                Engineering Manager, Senior Software Developer, Solutions
-                Architect
+                Engineering Manager, Senior Software Developer, Solutions Architect
               </span>
             </div>
             <div className="contact-section">
