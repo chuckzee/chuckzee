@@ -77,6 +77,16 @@ export default function Home() {
     },
   ];
 
+  const HiddenImagePreload = ({ projects }) => {
+    return (
+      <div style={{ display: 'none' }}>
+        {projects.map((project, index) => (
+          <img key={index} src={project.imageSrc} alt={project.name} />
+        ))}
+      </div>
+    );
+  }
+
   const openModal = (project) => {
     setModalContent(project);
     setModalOpen(true);
@@ -171,6 +181,7 @@ export default function Home() {
           </div>
         </div>
       ))}
+      <HiddenImagePreload projects={projects} />
       <Modal isOpen={isModalOpen} onClose={closeModal} content={modalContent} />
     </main>
   );
