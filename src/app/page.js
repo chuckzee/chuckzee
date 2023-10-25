@@ -87,8 +87,15 @@ export default function Home() {
       projectAlt: "A snapshot of a minecraft.net article"
     },
     {
+      name: "Image reading chatbot",
+      content: "Another discord chatbot - this one uses Google's Vision API to read images and then describe them to the user. I have engineered prompts to make it act like it can really see them. It's a fun way to learn about the API and how to use it.",
+      imageSrc: "/images/computervision.png",
+      uri: "#",
+      projectAlt: "A picture of a chat session between a user and a bot. The user sends an image and the bot responds with a description of the image."
+    },
+    {
       name: "This website",
-      content: "This website is a weird vaporwave ... piece of paper? Built with NextJS and deployed into Azure.",
+      content: "This website is a weird vaporwave ... piece of paper? Paperwave. Built with NextJS and deployed into Azure.",
       imageSrc: "/images/chuckzee.png",
       uri: "https://chuckzee.com",
       projectAlt: "Preview of ... this website!"
