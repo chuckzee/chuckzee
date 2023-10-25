@@ -5,7 +5,9 @@ import Modal from "../components/Modal";
 export default function Home() {
   const [isModalOpen, setModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState("");
-
+  const CHUNK_SIZE_FIRST_PAGE = 6;
+  const CHUNK_SIZE_OTHER_PAGES = 10;
+  
   const projects = [
     {
       name: "Coupon Clipping App",
@@ -139,10 +141,24 @@ export default function Home() {
     </div>
   );
 
-  const chunksOfProjects = [];
-  for (let i = 0; i < projects.length; i += 6) {
-    chunksOfProjects.push(projects.slice(i, i + 6));
+  const splitIntoChunks = (arr, firstChunkSize, otherChunkSize) => {
+    const result = [];
+    let i = 0;
+  
+    if (arr.length > 0) {
+      result.push(arr.slice(i, i + firstChunkSize));
+      i += firstChunkSize;
+    }
+  
+    while (i < arr.length) {
+      result.push(arr.slice(i, i + otherChunkSize));
+      i += otherChunkSize;
+    }
+  
+    return result;
   }
+  
+  const chunksOfProjects = splitIntoChunks(projects, CHUNK_SIZE_FIRST_PAGE, CHUNK_SIZE_OTHER_PAGES);
 
   return (
     <main>
